@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "SharedBookmarks",
+  "description": "This extension lets you share bookmarks with your co-workers",
+  "version": "0.5",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://secure.flickr.com/"
+  ]
+}
