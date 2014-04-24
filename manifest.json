@@ -3,7 +3,8 @@
 
   "name": "SharedBookmarks",
   "permissions": [
-    "storage"
+    "storage",
+    "http://sharedbookmarks.herokuapp.com/"
   ],
   "description": "This extension lets you share bookmarks with your co-workers",
   "version": "0.5",
@@ -15,7 +16,7 @@
   "content_scripts":[
     {
       "matches": ["*://*/*"],
-      "js": ["jquery-1.11.0.min.js"]    
+      "js": ["jquery-1.11.0.min.js","popup.js"]    
     }
   ]
 }

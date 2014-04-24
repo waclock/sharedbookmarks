@@ -78,19 +78,41 @@
 // };
 
 // Run our kitten generation script as soon as the document's DOM is ready.
-document.addEventListener('DOMContentLoaded', function () {
-  kittenGenerator.requestKittens();
-});
 
-      function saveChanges() {
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // kittenGenerator.requestKittens();
+});
+      function log_in() {
+        var user_name=$('#user-name').val();
+        var password=$('#password').val();
+        var call_url="http://sharedbookmarks.herokuapp.com/api/log_in?email="+user_name+"&password="+password;
+        console.log("Calling: "+call_url);
         // Call AJAX access_token
-        // Save it using the Chrome extension storage API.
-        var access_token = "holi";
-        chrome.storage.sync.set({'access_token': access_token}, function() {
-          // Notify that we saved.
-          message('Settings saved');
+        $.ajax({
+            url: call_url,
+            type: 'GET',
+            success: function(data) {
+                console.log(data.responseText);
+                alert(data.responseText);
+                var access_token=data.responseText;
+                chrome.storage.sync.set({'access_token': access_token}, function() {
+                  message('Settings saved');
+                });
+            },
+            error: function(){
+              console.log($.makeArray(arguments));              
+            }
         });
+        // Save it using the Chrome extension storage API.
+          // Notify that we saved.
       }
+$(document).ready(function(){
+  $('#accept').click(function(e){
+    log_in();
+  }); 
+});
 
 
 
