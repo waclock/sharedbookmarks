@@ -95,9 +95,12 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'GET',
             success: function(data) {
                 var access_token=data.access_token;
+                console.log("Gonna try to save: "+access_token);
                 chrome.storage.sync.set({'access_token': access_token}, function() {
-                  console.log('Settings saved, access_token updated: '+access_token);
-                });
+                    chrome.storage.sync.get("access_token", function(data) {
+                      console.log("access_token", data);
+                    });
+                  });
             },
             error: function(){
               console.log($.makeArray(arguments));              
@@ -107,26 +110,16 @@ document.addEventListener('DOMContentLoaded', function () {
           // Notify that we saved.
       }
 $(document).ready(function(){
-  $('#accept').click(function(e){
-    chrome.storage.sync.get('acess_token', function (result) {
-            console.log(result["access_token"]);
+  $('#see_token').click(function(e){
+    chrome.storage.sync.get("access_token", function (data) {
+            console.log('access_token',data.access_token);
+            $('#user-name').val(data.access_token);
         });
-    log_in();
   }); 
+  $('#accept').click(function(e){
+    log_in();    
+  })
 });
-
-
-chrome.storage.onChanged.addListener(function(changes, namespace) {
-        for (key in changes) {
-          var storageChange = changes[key];
-          console.log('Storage key "%s" in namespace "%s" changed. ' +
-                      'Old value was "%s", new value is "%s".',
-                      key,
-                      namespace,
-                      storageChange.oldValue,
-                      storageChange.newValue);
-        }
-      });
 
 
       
