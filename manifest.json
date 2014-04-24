@@ -4,9 +4,9 @@
   "name": "SharedBookmarks",
   "description": "This extension lets you share bookmarks with your co-workers",
   "version": "0.5",
-
+  "icons": { "16": "icon-16.png", "128": "icon-128.png" },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "icon-square.png",
     "default_popup": "popup.html"
   },
   "permissions": [
