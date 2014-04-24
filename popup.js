@@ -94,11 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
             url: call_url,
             type: 'GET',
             success: function(data) {
-                console.log(data.responseText);
-                alert(data.responseText);
-                var access_token=data.responseText;
+                var access_token=data.access_token;
                 chrome.storage.sync.set({'access_token': access_token}, function() {
-                  message('Settings saved');
+                  console.log('Settings saved, access_token updated: '+access_token);
                 });
             },
             error: function(){
@@ -110,9 +108,27 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 $(document).ready(function(){
   $('#accept').click(function(e){
+    chrome.storage.sync.get('acess_token', function (result) {
+            console.log(result["access_token"]);
+        });
     log_in();
   }); 
 });
 
+
+chrome.storage.onChanged.addListener(function(changes, namespace) {
+        for (key in changes) {
+          var storageChange = changes[key];
+          console.log('Storage key "%s" in namespace "%s" changed. ' +
+                      'Old value was "%s", new value is "%s".',
+                      key,
+                      namespace,
+                      storageChange.oldValue,
+                      storageChange.newValue);
+        }
+      });
+
+
+      
 
 
