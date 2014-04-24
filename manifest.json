@@ -2,6 +2,9 @@
   "manifest_version": 2,
 
   "name": "SharedBookmarks",
+  "permissions": [
+    "storage"
+  ],
   "description": "This extension lets you share bookmarks with your co-workers",
   "version": "0.5",
   "icons": { "16": "icon-16.png", "128": "icon-128.png" },
@@ -9,7 +12,10 @@
     "default_icon": "icon-square.png",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "storage"
+  "content_scripts":[
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery-1.11.0.min.js"]    
+    }
   ]
 }
