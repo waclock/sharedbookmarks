@@ -78,7 +78,8 @@
 // };
 
 // Run our kitten generation script as soon as the document's DOM is ready.
-
+// var site="http://sharedbookmarks.herokuapp.com";
+var site="http://localhost:3000"
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
       function log_in() {
         var user_name=$('#user-name').val();
         var password=$('#password').val();
-        var call_url="http://sharedbookmarks.herokuapp.com/api/log_in?email="+user_name+"&password="+password;
+        var call_url=site+"/api/log_in?email="+user_name+"&password="+password;
         console.log("Calling: "+call_url);
         // Call AJAX access_token
         $.ajax({
@@ -109,16 +110,31 @@ document.addEventListener('DOMContentLoaded', function () {
         // Save it using the Chrome extension storage API.
           // Notify that we saved.
       }
+      function load_bookmarks(access_token){
+        var call_url=site+"/api/bookmarks";
+        $.ajax({
+            url: call_url,
+            type: 'GET',
+            data: { access_token: access_token} ,
+            success: function(data) {
+              console.log(data);
+
+            } 
+          });      
+      }
 $(document).ready(function(){
-  $('#see_token').click(function(e){
     chrome.storage.sync.get("access_token", function (data) {
-            console.log('access_token',data.access_token);
-            $('#user-name').val(data.access_token);
-        });
-  }); 
+          if(data.access_token!=undefined){
+            load_bookmarks(data.access_token);
+            console.log(data.access_token);
+          }
+          else{
+            $('#log-in').removeClass('hide');
+          }
+    });
   $('#accept').click(function(e){
     log_in();    
-  })
+  });
 });
 
 

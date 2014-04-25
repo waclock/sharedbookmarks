@@ -4,7 +4,8 @@
   "name": "SharedBookmarks",
   "permissions": [
     "storage",
-    "http://sharedbookmarks.herokuapp.com/"
+    "http://sharedbookmarks.herokuapp.com/",
+    "http://localhost/*"
   ],
   "description": "This extension lets you share bookmarks with your co-workers",
   "version": "0.5",
