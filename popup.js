@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   });
             },
             error: function(){
-              console.log($.makeArray(arguments));              
+              console.log((arguments));              
             }
         });
         // Save it using the Chrome extension storage API.
@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
             data: { access_token: access_token} ,
             success: function(data) {
               console.log(data);
+              $('#json-viewer').text(JSON.stringify(data));
 
             } 
           });      
