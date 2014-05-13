@@ -1,0 +1,119 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\000031}}
+body {
+  background-color: #efefef; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\000035}}
+img {
+  margin: 5px;
+  border: 2px solid black;
+  vertical-align: middle;
+  width: 75px;
+  height: 75px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000312}}
+.hide {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000315}}
+#json-viewer {
+  min-width: 200px;
+  min-height: 0px;
+  width: 200px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000320}}
+.group-li {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000325}}
+  .group-li:hover {
+    border: 1px solid #a5a5a5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000328}}
+  .group-li a {
+    width: 100%;
+    cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000333}}
+#main-ul {
+  min-height: 0px;
+  width: 200px;
+  list-style-type: none;
+  float: right;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 0px;
+  margin: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000343}}
+  #main-ul li {
+    border-radius: 5px;
+    cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000348}}
+#folders-div {
+  text-align: center;
+  min-height: 0px;
+  width: 200px;
+  float: right;
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000356}}
+  #folders-div ul {
+    list-style-type: none;
+    padding: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000360}}
+  #folders-div li {
+    border-radius: 5px;
+    cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000363}}
+    #folders-div li:hover {
+      border: 1px solid #a5a5a5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000366}}
+    #folders-div li a {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000372}}
+.divider {
+  width: 1px;
+  height: 100%;
+  margin: 5px 0;
+  overflow: hidden;
+  background-color: #000;
+  display: inline-block;
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000381}}
+.full-width {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000384}}
+#bookmarks-div {
+  text-align: center;
+  min-height: 0px;
+  width: 200px;
+  float: left;
+  vertical-align: top;
+  display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000385}}
+  #bookmarks-div .bookmark-ul {
+    margin: 0px;
+    padding: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000395}}
+  #bookmarks-div ul {
+    list-style-type: none;
+    padding: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\0000399}}
+  #bookmarks-div li {
+    border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\00003101}}
+    #bookmarks-div li:hover {
+      border: 1px solid #a5a5a5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/johnpeebles\/Brainshots\/MultiBookmark\/sharedbookmarks\/lib\/css\/custom\.scss}line{font-family:\00003104}}
+    #bookmarks-div li a.full-width {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      text-decoration: none;
+      color: black; }
