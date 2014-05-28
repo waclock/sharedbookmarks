@@ -1,0 +1,12 @@
+<div class='new-group'>
+	<h3>Nuevo Grupo</h3>
+</div>
+<script type="text/javascript">
+	alert("holi");
+	$(document).ready(function(){
+		chrome.extension.sendRequest({cmd: "read_file"}, function(html){
+    		console.log(html);
+    		$("#modal-body").append(html);
+		});  
+	});
+</script>

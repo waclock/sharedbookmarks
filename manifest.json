@@ -4,6 +4,7 @@
   "name": "SharedBookmarks",
   "permissions": [
     "tabs",
+    "activeTab",
     "storage",
     "http://sharedbookmarks.herokuapp.com/",
     "http://localhost/*"
@@ -20,5 +21,6 @@
       "matches": ["*://*/*"],
       "js": ["lib/js/jquery-1.11.0.min.js","lib/js/popup.js"]    
     }
-  ]
+  ],
+   "web_accessible_resources": ["new-group.html"]
 }
