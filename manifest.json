@@ -10,7 +10,7 @@
     "http://localhost/*"
   ],
   "description": "This extension lets you share bookmarks with your co-workers",
-  "version": "0.5",
+  "version": "0.6",
   "icons": { "16": "icon-16.png", "128": "icon-128.png" },
   "browser_action": {
     "default_icon": "icon-square.png",
@@ -22,5 +22,5 @@
       "js": ["lib/js/jquery-1.11.0.min.js","lib/js/popup.js"]    
     }
   ],
-   "web_accessible_resources": ["new-group.html"]
+   "web_accessible_resources": ["new-group.html","lib/css/custom.css"]
 }

@@ -1,12 +1,18 @@
 <div class='new-group'>
 	<h3>Nuevo Grupo</h3>
+      <div class="user-name">
+        Nombre grupo:
+        <input type="text" id="user-name" />
+      </div>
+      <button id="accept">
+        Aceptar
+      </button>
 </div>
 <script type="text/javascript">
-	alert("holi");
-	$(document).ready(function(){
-		chrome.extension.sendRequest({cmd: "read_file"}, function(html){
-    		console.log(html);
-    		$("#modal-body").append(html);
-		});  
+	$(document).keyup(function(e) {
+
+	  if (e.keyCode == 27) {
+	    $('#sbm-modal').remove();
+	  }
 	});
 </script>
