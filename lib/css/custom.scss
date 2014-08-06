@@ -9,6 +9,11 @@ img {
   width: 75px;
   height: 75px;
 }
+.new-item{
+  width:200px;
+  position:absolute;
+  bottom:0px;
+}
 .hide{
   display:none;
 }
@@ -38,7 +43,7 @@ img {
   vertical-align:top;
   display:inline-block;
   text-align:center;
-  padding:0px 0px;
+  padding:0px 0px 35px;
   margin:0px;
   li{
     border-radius:5px;
@@ -55,7 +60,7 @@ img {
   border-radius:5px;
   ul{
     list-style-type:none;    
-    padding:0px;    
+    padding:0px 0px 35px;    
   }
   li{
     border-radius:5px;
@@ -84,7 +89,7 @@ img {
 #bookmarks-div{
   .bookmark-ul{
     margin:0px;
-    padding:0px;
+    padding:0px 0px 35px;
   }
   text-align:center;  
   min-height:0px;

@@ -19,26 +19,32 @@
      <div class="log-in hide" id="log-in">
       <div class="user-name">
         Email:
-        <input type="text" id="user-name" />
+        <br>
+        <input type="text" id="user-name" class="form-control" />
       </div>
       <div class="password">
         Contraseña:
-        <input type="password" id="password" />
+        <input type="password" id="password"   class="form-control" />
       </div>
-      <button id="accept">
+      <br>
+      <button id="accept" class="btn btn-primary btn-block">
         Aceptar
       </button>
-      <button id="see_token">
+<!--       <button id="see_token" class="btn btn-primary">
         Ver token
-      </button>
+      </button> -->
      </div>
      <div  id="json-viewer">
      <div id="groups-div">
       <ul id="main-ul"></ul>
-      <div id="add-group"><button class="btn btn-primary full-width">Agregar Grupo</button></div>
+      <div id="add-group"class="new-item hide"><button class="btn btn-primary full-width" id="new-group-button">Agregar Grupo</button></div>
      </div>
-      <div class='hide'id='folders-div'></div>
-      <div class='hide'id='bookmarks-div'></div>
+      <div class='hide'id='folders-div'>
+        <div id="add-folder"class="new-item"><button class="btn btn-primary full-width" id="new-folder-button">Agregar Carpeta</button></div>        
+      </div>
+      <div class='hide'id='bookmarks-div'>
+        <div id="add-bookmark"class="new-item"><button class="btn btn-primary full-width" id="new-bookmark-button">Agregar Bookmark</button></div>           
+      </div>
      </div>
   </body>
 </html>

@@ -5,6 +5,11 @@ img {
   width: 75px;
   height: 75px; }
 
+.new-item {
+  width: 200px;
+  position: absolute;
+  bottom: 0px; }
+
 .hide {
   display: none; }
 
@@ -32,7 +37,7 @@ img {
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  padding: 0px 0px;
+  padding: 0px 0px 35px;
   margin: 0px; }
   #main-ul li {
     border-radius: 5px;
@@ -48,7 +53,7 @@ img {
   border-radius: 5px; }
   #folders-div ul {
     list-style-type: none;
-    padding: 0px; }
+    padding: 0px 0px 35px; }
   #folders-div li {
     border-radius: 5px;
     cursor: default; }
@@ -78,7 +83,7 @@ img {
   display: inline-block; }
   #bookmarks-div .bookmark-ul {
     margin: 0px;
-    padding: 0px; }
+    padding: 0px 0px 35px; }
   #bookmarks-div ul {
     list-style-type: none;
     padding: 0px; }
@@ -96,7 +101,9 @@ img {
 #groups-div {
   width: 200px;
   float: right; }
-
+.log-in{
+  padding:5%;
+}
 #modal-body {
   width: 400px;
   margin: auto auto;
