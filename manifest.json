@@ -23,5 +23,5 @@
       "run_at": "document_end"  
     }
   ],
-   "web_accessible_resources": ["new-group.html","lib/js/new-group.js","new-folder.html","lib/js/new-folder.js","new-bookmark.html","lib/js/new-bookmark.js","lib/css/custom.css","lib/js/jquery-1.11.0.min.js"]
+   "web_accessible_resources": ["new-group.html","lib/js/new-group.js","new-folder.html","lib/js/new-folder.js","new-bookmark.html","lib/js/new-bookmark.js","new-bookmark.html","lib/js/new-bookmark.js","lib/css/custom.css","lib/js/jquery-1.11.0.min.js"]
 }
